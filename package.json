@@ -1,0 +1,19 @@
+{
+  "name": "bz-lady",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "node index.js",
+    "build": "browserify browser/main.js > public/bundle.js",
+    "watch-js": "watchify browser/main.js -o public/bundle.js -dv",
+    "dev": "npm run watch-js & npm run server"
+  },
+  "dependencies": {
+    "canvas-particles": "0.0.8",
+    "randomcolor": "^0.2.0"
+  },
+  "devDependencies": {
+    "ecstatic": "^0.8.0",
+    "routes": "^2.0.0"
+  }
+}
